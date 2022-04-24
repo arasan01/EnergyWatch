@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F75329D27F9D3D600662FE1 /* AppLib in Frameworks */ = {isa = PBXBuildFile; productRef = 6F75329C27F9D3D600662FE1 /* AppLib */; };
+		6F7532A027FC899300662FE1 /* MeasureEnergyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F75329F27FC899300662FE1 /* MeasureEnergyModel.swift */; };
+		6F87977A27F9B7A5000C676F /* EnergyWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6F87977927F9B7A5000C676F /* EnergyWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F87977F27F9B7A6000C676F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F87977E27F9B7A6000C676F /* Assets.xcassets */; };
+		6F87978527F9B7A6000C676F /* EnergyWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F87978427F9B7A6000C676F /* EnergyWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F87978A27F9B7A6000C676F /* EnergyWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F87978927F9B7A6000C676F /* EnergyWatchApp.swift */; };
+		6F87978C27F9B7A6000C676F /* MeasureEnergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F87978B27F9B7A6000C676F /* MeasureEnergyView.swift */; };
+		6F87978E27F9B7A6000C676F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F87978D27F9B7A6000C676F /* NotificationController.swift */; };
+		6F87979027F9B7A6000C676F /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F87978F27F9B7A6000C676F /* NotificationView.swift */; };
+		6F87979227F9B7A6000C676F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F87979127F9B7A6000C676F /* ComplicationController.swift */; };
+		6F87979427F9B7A7000C676F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F87979327F9B7A7000C676F /* Assets.xcassets */; };
+		6F87979727F9B7A7000C676F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F87979627F9B7A7000C676F /* Preview Assets.xcassets */; };
+		6FD63C0B27FCD6DF0006C1E9 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD63C0A27FCD6DF0006C1E9 /* SettingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F87977B27F9B7A5000C676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F87976F27F9B7A4000C676F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F87977827F9B7A5000C676F;
+			remoteInfo = "EnergyWatch WatchKit App";
+		};
+		6F87978627F9B7A6000C676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F87976F27F9B7A4000C676F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F87978327F9B7A6000C676F;
+			remoteInfo = "EnergyWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F87979F27F9B7A7000C676F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F87978527F9B7A6000C676F /* EnergyWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F8797A327F9B7A7000C676F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6F87977A27F9B7A5000C676F /* EnergyWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F75329F27FC899300662FE1 /* MeasureEnergyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureEnergyModel.swift; sourceTree = "<group>"; };
+		6F87977527F9B7A4000C676F /* EnergyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F87977927F9B7A5000C676F /* EnergyWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F87977E27F9B7A6000C676F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F87978427F9B7A6000C676F /* EnergyWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EnergyWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F87978927F9B7A6000C676F /* EnergyWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyWatchApp.swift; sourceTree = "<group>"; };
+		6F87978B27F9B7A6000C676F /* MeasureEnergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureEnergyView.swift; sourceTree = "<group>"; };
+		6F87978D27F9B7A6000C676F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6F87978F27F9B7A6000C676F /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		6F87979127F9B7A6000C676F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6F87979327F9B7A7000C676F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F87979627F9B7A7000C676F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F87979827F9B7A7000C676F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F87979927F9B7A7000C676F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6FD63C0A27FCD6DF0006C1E9 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6FD63C1227FFC17C0006C1E9 /* EnergyWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EnergyWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F87978127F9B7A6000C676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F75329D27F9D3D600662FE1 /* AppLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F75329B27F9D3D600662FE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F75329E27FC895600662FE1 /* ClockDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				6F87978B27F9B7A6000C676F /* MeasureEnergyView.swift */,
+				6F75329F27FC899300662FE1 /* MeasureEnergyModel.swift */,
+				6FD63C0A27FCD6DF0006C1E9 /* SettingView.swift */,
+			);
+			path = ClockDisplay;
+			sourceTree = "<group>";
+		};
+		6F87976E27F9B7A4000C676F = {
+			isa = PBXGroup;
+			children = (
+				6F87977D27F9B7A5000C676F /* EnergyWatch WatchKit App */,
+				6F87978827F9B7A6000C676F /* EnergyWatch WatchKit Extension */,
+				6F87977627F9B7A4000C676F /* Products */,
+				6F75329B27F9D3D600662FE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6F87977627F9B7A4000C676F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F87977527F9B7A4000C676F /* EnergyWatch.app */,
+				6F87977927F9B7A5000C676F /* EnergyWatch.app */,
+				6F87978427F9B7A6000C676F /* EnergyWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F87977D27F9B7A5000C676F /* EnergyWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6F87977E27F9B7A6000C676F /* Assets.xcassets */,
+			);
+			path = "EnergyWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		6F87978827F9B7A6000C676F /* EnergyWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6FD63C1227FFC17C0006C1E9 /* EnergyWatch WatchKit Extension.entitlements */,
+				6F75329E27FC895600662FE1 /* ClockDisplay */,
+				6F87978927F9B7A6000C676F /* EnergyWatchApp.swift */,
+				6F87978D27F9B7A6000C676F /* NotificationController.swift */,
+				6F87978F27F9B7A6000C676F /* NotificationView.swift */,
+				6F87979127F9B7A6000C676F /* ComplicationController.swift */,
+				6F87979327F9B7A7000C676F /* Assets.xcassets */,
+				6F87979827F9B7A7000C676F /* Info.plist */,
+				6F87979927F9B7A7000C676F /* PushNotificationPayload.apns */,
+				6F87979527F9B7A7000C676F /* Preview Content */,
+			);
+			path = "EnergyWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6F87979527F9B7A7000C676F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F87979627F9B7A7000C676F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F87977427F9B7A4000C676F /* EnergyWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F8797A427F9B7A7000C676F /* Build configuration list for PBXNativeTarget "EnergyWatch" */;
+			buildPhases = (
+				6F87977327F9B7A4000C676F /* Resources */,
+				6F8797A327F9B7A7000C676F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F87977C27F9B7A5000C676F /* PBXTargetDependency */,
+			);
+			name = EnergyWatch;
+			packageProductDependencies = (
+			);
+			productName = EnergyWatch;
+			productReference = 6F87977527F9B7A4000C676F /* EnergyWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		6F87977827F9B7A5000C676F /* EnergyWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F8797A027F9B7A7000C676F /* Build configuration list for PBXNativeTarget "EnergyWatch WatchKit App" */;
+			buildPhases = (
+				6F87977727F9B7A5000C676F /* Resources */,
+				6F87979F27F9B7A7000C676F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F87978727F9B7A6000C676F /* PBXTargetDependency */,
+			);
+			name = "EnergyWatch WatchKit App";
+			productName = "EnergyWatch WatchKit App";
+			productReference = 6F87977927F9B7A5000C676F /* EnergyWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6F87978327F9B7A6000C676F /* EnergyWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F87979C27F9B7A7000C676F /* Build configuration list for PBXNativeTarget "EnergyWatch WatchKit Extension" */;
+			buildPhases = (
+				6F87978027F9B7A6000C676F /* Sources */,
+				6F87978127F9B7A6000C676F /* Frameworks */,
+				6F87978227F9B7A6000C676F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EnergyWatch WatchKit Extension";
+			packageProductDependencies = (
+				6F75329C27F9D3D600662FE1 /* AppLib */,
+			);
+			productName = "EnergyWatch WatchKit Extension";
+			productReference = 6F87978427F9B7A6000C676F /* EnergyWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F87976F27F9B7A4000C676F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6F87977427F9B7A4000C676F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					6F87977827F9B7A5000C676F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					6F87978327F9B7A6000C676F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 6F87977227F9B7A4000C676F /* Build configuration list for PBXProject "EnergyWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F87976E27F9B7A4000C676F;
+			packageReferences = (
+			);
+			productRefGroup = 6F87977627F9B7A4000C676F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F87977427F9B7A4000C676F /* EnergyWatch */,
+				6F87977827F9B7A5000C676F /* EnergyWatch WatchKit App */,
+				6F87978327F9B7A6000C676F /* EnergyWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F87977327F9B7A4000C676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F87977727F9B7A5000C676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F87977F27F9B7A6000C676F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F87978227F9B7A6000C676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F87979727F9B7A7000C676F /* Preview Assets.xcassets in Resources */,
+				6F87979427F9B7A7000C676F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F87978027F9B7A6000C676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F87978E27F9B7A6000C676F /* NotificationController.swift in Sources */,
+				6F87978C27F9B7A6000C676F /* MeasureEnergyView.swift in Sources */,
+				6F7532A027FC899300662FE1 /* MeasureEnergyModel.swift in Sources */,
+				6FD63C0B27FCD6DF0006C1E9 /* SettingView.swift in Sources */,
+				6F87979227F9B7A6000C676F /* ComplicationController.swift in Sources */,
+				6F87978A27F9B7A6000C676F /* EnergyWatchApp.swift in Sources */,
+				6F87979027F9B7A6000C676F /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F87977C27F9B7A5000C676F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F87977827F9B7A5000C676F /* EnergyWatch WatchKit App */;
+			targetProxy = 6F87977B27F9B7A5000C676F /* PBXContainerItemProxy */;
+		};
+		6F87978727F9B7A6000C676F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F87978327F9B7A6000C676F /* EnergyWatch WatchKit Extension */;
+			targetProxy = 6F87978627F9B7A6000C676F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F87979A27F9B7A7000C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F87979B27F9B7A7000C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F87979D27F9B7A7000C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "EnergyWatch WatchKit Extension/EnergyWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnergyWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SDVGAVV7HT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EnergyWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EnergyWatch Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = EnergyWatch_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arasan01.EnergyWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		6F87979E27F9B7A7000C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "EnergyWatch WatchKit Extension/EnergyWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnergyWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SDVGAVV7HT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EnergyWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "EnergyWatch Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = EnergyWatch_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arasan01.EnergyWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		6F8797A127F9B7A7000C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDVGAVV7HT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = EnergyWatch_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arasan01.EnergyWatch.watchkitapp;
+				PRODUCT_NAME = EnergyWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		6F8797A227F9B7A7000C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDVGAVV7HT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = EnergyWatch_WatchKit_Extension;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arasan01.EnergyWatch.watchkitapp;
+				PRODUCT_NAME = EnergyWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		6F8797A527F9B7A7000C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDVGAVV7HT;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arasan01.EnergyWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6F8797A627F9B7A7000C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDVGAVV7HT;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arasan01.EnergyWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F87977227F9B7A4000C676F /* Build configuration list for PBXProject "EnergyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F87979A27F9B7A7000C676F /* Debug */,
+				6F87979B27F9B7A7000C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F87979C27F9B7A7000C676F /* Build configuration list for PBXNativeTarget "EnergyWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F87979D27F9B7A7000C676F /* Debug */,
+				6F87979E27F9B7A7000C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F8797A027F9B7A7000C676F /* Build configuration list for PBXNativeTarget "EnergyWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F8797A127F9B7A7000C676F /* Debug */,
+				6F8797A227F9B7A7000C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F8797A427F9B7A7000C676F /* Build configuration list for PBXNativeTarget "EnergyWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F8797A527F9B7A7000C676F /* Debug */,
+				6F8797A627F9B7A7000C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F75329C27F9D3D600662FE1 /* AppLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppLib;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F87976F27F9B7A4000C676F /* Project object */;
+}
